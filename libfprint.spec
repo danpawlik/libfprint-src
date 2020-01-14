@@ -12,8 +12,11 @@ BuildRequires:  meson
 BuildRequires:  gcc
 BuildRequires:  gcc-c++
 BuildRequires:  git
-BuildRequires:  pkgconfig(glib-2.0) >= 2.28
-BuildRequires:  pkgconfig(libusb-1.0) >= 0.9.1
+BuildRequires:  glib2-devel
+BuildRequires:  libgusb-devel
+BuildRequires:  gobject-introspection-devel
+BuildRequires:  clang
+BuildRequires:  cmake
 BuildRequires:  pkgconfig(nss)
 BuildRequires:  pkgconfig(pixman-1)
 BuildRequires:  gtk-doc
@@ -53,8 +56,11 @@ developing applications that use %{name}.
 %doc HACKING.md
 %{_includedir}/*
 %{_libdir}/*.so
-%{_libdir}/pkgconfig/%{name}.pc
+%{_libdir}/pkgconfig/libfprint2.pc
+%{_libdir}/girepository-1.0/FPrint-2.0.typelib
 %{_datadir}/gtk-doc/html/libfprint/
+%{_datadir}/gir-1.0/FPrint-2.0.gir
+
 
 %changelog
 * Mon Jan 13 2020 Daniel Pawlik <dpawlik@redhat.com> - 1.90.0-1
