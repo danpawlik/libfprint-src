@@ -56,16 +56,16 @@ developing applications that use %{name}.
 %doc HACKING.md
 %{_includedir}/*
 %{_libdir}/*.so
-%{_libdir}/pkgconfig/libfprint2.pc
+%{_libdir}/pkgconfig/%{name}2.pc
 %{_libdir}/girepository-1.0/FPrint-2.0.typelib
 %{_datadir}/gtk-doc/html/libfprint/
 %{_datadir}/gir-1.0/FPrint-2.0.gir
 
-
 %changelog
-* Mon Jan 13 2020 Daniel Pawlik <dpawlik@redhat.com> - 1.90.0-1
-+ libfprint-1.90.0-1
-- Update to 1.90.0
+%changelog
+* Mon Jan 19 2020 Daniel Pawlik <dpawlik@redhat.com> - 1.90.0
++ libfprint-1.90.0
+- Update to 1.0
 
 * Wed Aug 14 2019 Benjamin Berg <bberg@redhat.com> - 1.0-1
 + libfprint-1.0-1
