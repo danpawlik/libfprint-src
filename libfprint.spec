@@ -1,11 +1,11 @@
 Name:           libfprint
-Version:        1.90.0
+Version:        1.90.1
 Release:        1%{?dist}
 Summary:        Toolkit for fingerprint scanner
 
 License:        LGPLv2+
 URL:            http://www.freedesktop.org/wiki/Software/fprint/libfprint
-Source0:        https://gitlab.freedesktop.org/libfprint/libfprint/uploads/1bba17b5daa130aa548bc7ea96dc58c4/%{name}-%{version}.tar.xz
+Source0:        https://gitlab.freedesktop.org/libfprint/libfprint/uploads/662cd834e76c02c4d74ad01c50412759/%{name}-%{version}.tar.xz
 ExcludeArch:    s390 s390x
 
 BuildRequires:  meson
